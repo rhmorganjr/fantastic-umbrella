@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/rhmorganjr/fantastic-umbrella/issues"
   },
-  "homepage": "https://github.com/rhmorganjr/fantastic-umbrella#readme"
+  "homepage": "https://github.com/rhmorganjr/fantastic-umbrella#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.12"
+  }
 }
