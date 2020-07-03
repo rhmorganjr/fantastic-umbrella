@@ -19,13 +19,12 @@ Product.init(
     // define a product name column
     product_name: {
       type: DataTypes.STRING,
-      allowNull: false,
-      isDecimal: true
+      allowNull: false
     },
     price: {
       type: DataTypes.DECIMAL,
       allowNull: false,
-      
+      isDecimal: true
     },
     stock: {
       type: DataTypes.INTEGER,
@@ -34,7 +33,11 @@ Product.init(
       isNumeric: true
     },
     category_id: {
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'category',
+        key: 'id'
+      }
     }
   },
   {
